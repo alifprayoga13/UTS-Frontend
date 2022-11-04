@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../UTS-1/css/bootstrap.min.css">
+    <title>Introduce</title>
+</head>
+<style>
+    label {
+        font-weight: bold;
+    }
+    body {
+        background-image: url(bk2.png);
+    }
+</style>
+<body>
+    <center>
+        <img src="header.png" alt="header" width="1140px" height="350px">
+    </center>
+    <div style="background-color:white;" class="container p-3 my-3 border">
+        <h1 class="text-center"> Silahkan Isi Nama Anda !!!</h1>
+        <form id="form" method="POST">
+            <div class="alert alert-secondary">
+                <strong>Nama Lengkap</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="form-group">
+                    <label>First Name :</label>
+                    <input type="text" name="nama" class="form-control" placeholder="Masukan Nama Anda" required="required">
+                </div> 
+            </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                    <label>Last Name :</label>
+                    <input type="text" name="nama" class="form-control" placeholder="Masukan Nama Anda" required>
+                </div> 
+              </div>
+            </div>
+            <div class="text-bold">
+            <p>
+                Flash Fills is field in automatically. you can replace the text
+            </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="Tempatlahir">Tempat Lahir :</label>
+                        <input type="text" name="Tempatlahir" class="form-control" placeholder="Masukkan Tempat Lahir">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                    <label for="Tanggal_lahir">Tanggal Lahir :</label>
+                    <input type="date" name="Tanggal_lahir" class="form-control">
+                </div>
+            </div>
+        </div>
+            <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="jenis_kelamin">Select of Category :</label>
+                    <br>
+                    <input type="radio" name="jk" value="Vip">   Vip
+                    <br>
+                    <input type="radio" name="jk" value="Premium">   Premium
+                    <br>
+                    <input type="radio" name="jk" value="Basic">   Basic 
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label>Agama :</label>
+                    <select class="form-control" name="Agama">
+                        <option value="pilih">pilih</option>
+                        <option value="islam">islam</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Konghucu">Konghucu</option>
+                        <option value="Kristen">Kristen</option>
+                    </select>
+                </div>
+            </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Kewarganegaraan :</label>
+                <br>
+                <input type="radio" name="kwn" value="kwn">   Warga Negara Indonesia
+                <br>
+                <input type="radio" name="kwn" value="kwn">   Warga Negara Asing
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>E-mail :</label>
+                <input type="Email" name="email" class="form-control" placeholder="Masukkan E-mail">
+            </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label>Nomor Handphone :</label>
+                    <input type="text" name="no_hp" class="form-control" placeholder="masukkan nomor handphone">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Message :</label>
+                    <textarea class="form-control" name="Pesan" rows="2" id="Pesan"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <button type="submit" name="submit" class="btn btn-primary">Show Result</button>
+            <button type="reset" name="reset" class="btn btn-secondary">Reset Fields</button>
+        </center>
+    </form>
+    </div>
+    <center>
+        <div style="background-color: grey;" class="container p-3 my-3 border">
+            <h5 class="text-center" text-color="white">Muh. Alif Prayoga ~ Copyright &#169; 2022 Powered By Visual Studio Code</h5>
+        </div>   
+    </center>
+</body>
+</html>
